@@ -1,6 +1,6 @@
 function suite(nmbre){
     let mid = Math.ceil(nmbre / 2)
-    let suites = {}
+    let suites = []
 
     for(let i = 1 ; i <= mid ; i++){
         let total = 0;
@@ -9,7 +9,7 @@ function suite(nmbre){
             suite.push(j);
             total += j ;
             if (total == nmbre){
-                console.log(suite)
+                suites.push(suite)
                 break;
             }
             if (total > nmbre){
@@ -17,4 +17,5 @@ function suite(nmbre){
             }
         }
     }
+    console.log(suites)
 }
