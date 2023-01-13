@@ -76,7 +76,7 @@ Veuillez indiquer le numéro du contact que vous souhaitez supprimer : \n` + con
     }
     if (choix == 3){ // Suppression d'un contact
         choix  = Number(prompt(message))
-        annuaire.splice(choix) 
+        annuaire.splice(choix -1) 
         alert("Contact Supprimé ! ")
         return 0
     }
