@@ -65,19 +65,19 @@ Veuillez indiquer le numéro du contact que vous souhaitez supprimer : \n` + con
         nouveauContact  = prompt(`Indiquez le prénom, le nom et l'age du contact en les séparant par des espaces : 
         exemple : Jean Dupont 38`)
         let tab = nouveauContact.split(" ")
-        Contact = {
+        let contact = {
             prenom : tab[0],
             nom : tab[1],
             age : tab[2]
         }
         annuaire.push(contact)
-        Alert("Contact Ajouté ! ")
+        alert("Contact Ajouté ! ")
         return 0
     }
     if (choix == 3){ // Suppression d'un contact
         choix  = Number(prompt(message))
         annuaire.splice(choix) 
-        Alert("Contact Supprimé ! ")
+        alert("Contact Supprimé ! ")
         return 0
     }
     choix  = Number(prompt(message))
