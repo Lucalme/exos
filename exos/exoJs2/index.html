@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <script src="script.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="encart">
+        <div id="title"><h3>Chenil</h3></div>
+        <div id="body">
+            <div id="ajout">
+                <form action="javascript:void(0);" onsubmit="ajouter()">
+                    <label for="nom">Nom :</label>
+                    <br><input name="nom" id="nom" required>
+                    <br>
+                    <label for="race"></label>Race :</label>
+                    <br><input name="race" id="race" required>
+                    <br>
+                    <label for="nom" >Âge :</label>
+                    <br><input type="number" name='age' id="age" required>
+                    <br><br>
+                    <input type="submit" value="Ajouter 📃 ">
+                </form>
+                <br><br>
+            </div>
+            <div id="affichage">
+                <select>
+                    <option value="0"> Max </option>
+                    <option value="1"> Médor </option>
+                </select>
+                <p id="slct"></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
