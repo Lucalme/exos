@@ -1,0 +1,40 @@
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#calc{
+    width:350px;
+    display: flex;
+    background-color: rgb(55, 62, 68);
+    border-radius: 5px;
+    flex-direction: column;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+}
+#ecran{
+    border-radius: 5px;
+    width: 90%;
+    height: 200px;
+    background-color: rgb(195, 195, 195);
+}
+#boutons{
+    padding: 5px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.bouton{
+    font-size: xx-large;
+    min-width: 80px;
+    height: 80px;
+    border-radius: 5px;
+}
+.zero{
+    grid-column: span 2;
+}
+.orange{
+    color: white;
+    background-color: orange;
+}
+.gris{
+    background-color: gainsboro;
+}
