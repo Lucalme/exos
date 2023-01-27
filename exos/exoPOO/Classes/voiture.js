@@ -8,7 +8,7 @@ export class voiture extends vehicule {
     }
 
     display(){
-        return "Voiture : " + super.display()
+        return "Voiture : " + super.display() + ", Clim : "+this.clim
     }
 
 }
